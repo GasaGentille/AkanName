@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <title> Akan names project </title>
+        <head>
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <script src="akanName.js"></script>
+            <link rel="stylesheet" type="text/css" href="css/akanName.css">
+        </head>
+      <body>
+          <div class="container">
+              <form>
+                 <div class="row">
+                  <div class="col-md-12">
+                        <label>Enter your birthdate:</label>
+                        <input type="date" id="birthdate" value="" placeholder="Enter your dateofbirth"><br/>
+                  
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                            <label>Choose your gender:</label>
+                            <select id="gender">
+                            <option>Male</option>
+                            <option>Female</option><br>
+                            </select>
+                                 
+                      </div>
+                  </div>
+
+                 </div>
+                 <div class="row">
+                 <input type="button" value="submit" onclick="akanNames()">
+                </div>
+                </form>
+                <div id="display"></div>
+          </div>
+          
+   </body>
+</html>
