@@ -1,5 +1,5 @@
  Akan name
-#### This application has made for the collaboration purpose, 2019
+#### This application has made for getting Akan names, 2019
 ####  **Author: Gentille**
 ## Description
 This application has been created to help people to get their  akan names whenever they enter their birthday and their corresponding gender
