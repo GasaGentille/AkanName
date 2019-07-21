@@ -2,11 +2,12 @@ body{
 
 border: 3px black solid;
 /*background-color:rgb(150, 120,50)*/;
-background-image: url(../image/image.jpg);
+background-image: linear-gradient(rgba(0,0,0,0.7), rgba(126, 155, 189, 0.5)), url(../image/image.jpg);
+/* opacity: 0.5; */
 }
 .jumbotron{
     margin-top: 10px;
-    background-color:rgb(150, 120,50);
+    /* background-color:rgb(150, 120,50); */
 }
 
 
@@ -34,8 +35,8 @@ h1,p{
 .col-md-4{
     font-size: 20px;
     margin-top: 10px;
-    background-color: rgb(150, 120,50);
-    /* color: rgb(150, 120,50); */
+    /* background-color: rgb(150, 120,50); */
+    color: #50c724e3;
 }
 p{
     font-size: 20px;  
