@@ -1,7 +1,8 @@
 body{
 
 border: 3px black solid;
-background-color:rgb(150, 120,50);
+/*background-color:rgb(150, 120,50)*/;
+background-image: url(../image/image.jpg);
 }
 .jumbotron{
     margin-top: 10px;
@@ -33,6 +34,8 @@ h1,p{
 .col-md-4{
     font-size: 20px;
     margin-top: 10px;
+    background-color: rgb(150, 120,50);
+    /* color: rgb(150, 120,50); */
 }
 p{
     font-size: 20px;  
