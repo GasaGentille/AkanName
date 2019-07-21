@@ -2,41 +2,72 @@
 <html>
     <title> Akan names project </title>
         <head>
-
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+           <link rel="stylesheet"type="text/css" href="css/bootstrap.css">
+           
+            <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
             <script src="akanName.js"></script>
             <link rel="stylesheet" type="text/css" href="css/akanName.css">
         </head>
       <body>
           <div class="container">
-              <form>
-                 <div class="row">
-                  <div class="col-md-12">
-                        <label>Enter your date of birth:</label>
-                        <input type="date" id="birthdate" value="" placeholder="Enter your dateofbirth"><br/>
-                  
+              <div class="jumbotron">
+                  <h1>Akan names!</h1>
+              <p>Welcome to this Application which one you are going to use it to display your Akan name, Akan names are names given to children in Ghana according to the day of the week they were born("day names").  </p>
+              </div>
+              <div class="row">
+                 <!---- <h2>This is a brief description of the application's functionality</h2>-->
+                  <div class="col-md-4">
+                      <h2><b>Enter your birthday </h2></b>
+                      You have to enter  your birthday in the calendar format (mm/dd/yy):d represents a day ,m represents month an y represents year. You can either type your birthday or by clicking on provided calender.
                   </div>
-                  <div class="row">
-                      <div class="col-md-12">
-                            <label>Choose your gender:</label>
-                            <select id="gender">
-                                <option>Choose your gender</option>
-                            <option>Male</option>
-                            <option>Female</option><br>
-                            </select>
-                                 
-                      </div>
-                  </div>
-
-                 </div>
-                 <div class="row">
-                 <input type="button" value="submit" onclick="akanNames()">
+                  <div class="col-md-4">
+                      <h2><b>Choose your gender</b></h2>
+                        Secondly , you need to hoose your gender either Male or Female on choose your gender field because your akan name will be given according to both birthday and gender.
+                    </div>
+                    <div class="col-md-4">
+                        <h2><b>Submit button</b></h2>
+                            Finally, click on submit button to get the day you born on and your akan name, All the above instructions apply in the form bellow.
+                        </div>
+              </div>
+              <form id="form_data"  class="form row">
+             
+                      <div class="form-group row">
+                            <label class="label-control ">Enter your date of birth:</label>
+                            <input class="form-control form-control-sm col-md-6" type="date" id="birthdate" value="" placeholder="Enter your dateofbirth"><br/>    
+                      </div>                       
+                 
+                          <div class="form-group row">
+                                <label>Choose your gender:</label>
+                                <select id="gender" class="form-control form-control-sm">
+                                    <option>Choose your gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option><br>
+                                </select>
+                          </div>  
+                 <div class="row2">
+                    <button type="button" class="btn btn-success btn-sm" value="submit" onclick="akanNames()">submit</button>
                 </div>
-                <div id="display"></div>
-            </div>
-                </form>
-                <div id="display"></div>
+                <div class="container">
+                        <div class="row">
+                            <div  id="display" class="col-md-6"></div>
+                        </div>
+                    </div>
+     
+        </form>
+               
           </div>
           
+              
+              <div class="footer-area-bottom">
+                 <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="copyright text-center">
+                  <p>
+                    &copy; Copyright <strong>@2019,Akan names</strong>. All Rights Reserved
+                  </p>
+                </div> 
+                </div>
+                
    </body>
 </html>
