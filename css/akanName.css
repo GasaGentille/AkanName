@@ -1,15 +1,12 @@
 body{
 
 border: 3px black solid;
-/*background-color:rgb(150, 120,50)*/;
 background-image: linear-gradient(rgba(0,0,0,0.7), rgba(126, 155, 189, 0.5)), url(../image/image.jpg);
-/* opacity: 0.5; */
+
 }
 .jumbotron{
     margin-top: 10px;
-    /* background-color:rgb(150, 120,50); */
 }
-
 
 form{
     background-color: antiquewhite;
@@ -52,6 +49,7 @@ margin-left: 5px;
     margin: auto;
     margin-left: 50px;
 }
+/** footer style*/
 .footer-area-bottom{
     border:0px black solid;
     background-color: #f1f1f1f1;
