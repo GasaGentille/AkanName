@@ -1,14 +1,17 @@
 function formReset(){
     document.getElementById("form_data").reset();
 }
-function formValidation(){
-    var birthDate=document.getElementById("birthdate").value;
-    var gender=document.getElementById("gender").value;
+// function formValidation(){
+//     var birthDate=document.getElementById("birthdate").value;
+//     var gender=document.getElementById("gender").value;
     
-    if(gender !== "Male" || gender !== "Female"){
-        alert("Enter valid birthday and choose your gender");
-    }
-}
+//     if(gender != "Male" || gender != "Female"){
+//         alert("Enter valid birthday and choose your gender");
+//         document.getElementById("display").innerHTML="";
+        
+//     }
+//     return;
+// }
 
 
 
@@ -28,15 +31,24 @@ var maleNames=["Kwasi"," Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 var gender=document.getElementById("gender").value;
 var daysOfWeek=["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Suturday"];
-if(gender==="Male"){
-// console.log(maleNames[Math.round(dayOfTheWeek)]);
-    document.getElementById("display").innerHTML="You have born on"+daysOfWeek[Math.round(dayOfTheWeek)]+ " and Your akana name is " + maleNames[Math.round(dayOfTheWeek)];
-}
-else if(gender==="Female"){
-    document.getElementById("display").innerHTML=femaleNames[Math.round(dayOfTheWeek)];
+var dOfWeek = Math.round(dayOfTheWeek)
+// formValidation();
+if(!isNaN(dOfWeek)){
+    if(gender=="Male"){
+    // console.log(maleNames[Math.round(dayOfTheWeek)]);
+        
+        document.getElementById("display").innerHTML="You have born on "+daysOfWeek[dOfWeek]+ " and Your akana name is " + maleNames[Math.round(dayOfTheWeek)];
+    }
+    else if(gender==="Female"){
+        document.getElementById("display").innerHTML="You have born on "+daysOfWeek[dOfWeek]+ " and Your akana name is " + femaleNames[Math.round(dayOfTheWeek)];
+    }else{
+        alert("Enter valid birthday and choose your gender");
+        document.getElementById("display").innerHTML="";
+    }
 }
 else{
     alert("Enter valid birthday and choose your gender");
+    document.getElementById("display").innerHTML="";
 }
 
 formReset();
