@@ -1,10 +1,23 @@
+body{
+
+border: 3px black solid;
+background-color:rgb(150, 120,50);
+}
+.jumbotron{
+    margin-top: 10px;
+    background-color:rgb(150, 120,50);
+}
+
+
 form{
     background-color: antiquewhite;
     padding: 20px;
     padding-left: 80px;
-    line-height: 40px;
-    margin-top: 30px;
-    height: 400px;
+    line-height: 10px;
+    margin-top: 50px;
+    height: 200px;
+    width: 800px;
+    margin-left: 200px;
 
 }
 #display,#gender,input{
@@ -13,6 +26,25 @@ form{
 label{
     padding: 20px
 }
-body{
-    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg");
+
+h1,p{
+    color:black;
+}
+.col-md-4{
+    font-size: 20px;
+    margin-top: 10px;
+}
+p{
+    font-size: 20px;  
+}
+h2{
+margin-left: 5px;
+}
+.jumbotron{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.btn btn-success{
+    margin: auto;
+    margin-left: 50px;
 }
